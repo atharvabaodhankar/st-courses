@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <title>Featured Courses</title>
+    <!-- https://website69822.nicepage.io/Page-2.html -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ccapp.nicepage.com/4a4316528e67aca6aae425b10e9fc6dc1a8b13d2/images/default-logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </div>
+    </nav>
+    <script>
+        let navBar = document.querySelector("nav");
+        let hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener('click' , ()=>{
+            hamburger.classList.toggle('active');
+            navBar.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>

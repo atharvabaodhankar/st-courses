@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kumbh+Sans:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Macondo+Swash+Caps&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --purple: #43256f;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+}
+nav ul{
+    display: flex;
+    margin-right: 10vw;
+    list-style: none;
+}
+nav .logo{
+    margin-left: 10vw;
+}
+nav ul li{
+    margin: 0 1.5rem;
+}
+nav ul li a {
+    padding: 1.3rem 1.5rem;
+    font-size: 2rem;
+    color: #000;
+    transition: all .3s ease;
+}
+nav ul li a:hover{
+    color: var(--purple);
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    margin-right: 5vw;
+    cursor: pointer;
+    display: none;
+}
+.hambar{
+    width: 3.1rem;
+    height: .2rem;
+    border-radius: 3rem;
+    background-color: #000;
+    position: absolute;
+    transition: all .3s ease;
+}
+.hambar:nth-child(1){
+    top: 18px;
+}
+.hambar:nth-child(3){
+    bottom: 18px;
+}
+.hamburger.active .hambar:nth-child(1){
+    top: initial;
+    transform: rotate(135deg);
+}
+.hamburger.active .hambar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .hambar:nth-child(3){
+    bottom: initial;
+    transform: rotate(-135deg);
+}
+@media screen and (max-width:940px) {
+    nav ul{
+        align-items: flex-end;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        flex-direction: column;
+        background-color: #693aafcd;
+        height: 0px;
+        transition: all .4s ease;
+    }
+    nav.active ul{
+        height: 500px;
+    }
+    nav ul li{
+        margin: 2.5rem 1.5rem;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .hamburger{
+        display: inherit;
+    }
+}
+@media screen and (max-width:000px) {
+    
+}
+@media screen and (max-width:000px) {
+    
+}
+@media screen and (max-width:000px) {
+    
+}
+@media screen and (max-width:000px) {
+    
+}
+@media screen and (max-width:000px) {
+    
+}
