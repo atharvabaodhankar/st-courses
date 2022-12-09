@@ -48,6 +48,12 @@ nav ul li a:hover{
     margin-right: 5vw;
     cursor: pointer;
     display: none;
+    z-index: 100;
+}
+.hamburger.active{
+    top: 10px;
+    position: fixed;
+    right: 0;
 }
 .hambar{
     width: 3.1rem;
@@ -74,6 +80,111 @@ nav ul li a:hover{
     bottom: initial;
     transform: rotate(-135deg);
 }
+/* Courses */
+#courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--purple);
+    padding: 7rem 0;
+}
+.courses-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.courses-header h2{
+    font-size: 2rem;
+    color: #f1bb51;
+    letter-spacing: 2px;
+}
+.courses-header h1{
+    font-size: 6rem;
+    margin: 2rem 0;
+    color: #fff;
+}
+.courses-header hr{
+    width: 200px;
+    height: .5rem;
+    background-color: #f1bb51;
+}
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+}
+.courses-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem ;
+    width: 400px;
+    background-color: #68459d;
+    margin: 0 1.5rem;
+}
+.courses-box-img{
+    width: 100%;
+}
+.courses-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.courses-box-desc{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+.courses-box-desc h1{
+    font-size: 2.5rem;
+    color: #f1bb51;
+    font-weight: 400;
+}
+.courses-box-desc p{
+    margin: 1.3rem 0;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2.5rem;
+}
+.courses-box-desc a{
+    background-color: #f1bb51;
+    padding: 1rem 3rem;
+    color: var(--purple);
+    transition: all .3s ease;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.courses-box-desc a:hover{
+    background-color: #e1a62f;
+}
+@media screen and (max-width:1350px) {
+    .courses-box {
+        width: 341px;
+    }
+}
+@media screen and (max-width:1150px) {
+    .courses-box {
+        width: 300px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .courses{
+        flex-wrap: wrap;
+    }
+    .courses-box{
+        width: 350px;
+        margin: 1.5rem 1.5rem;
+    }
+}
 @media screen and (max-width:940px) {
     nav ul{
         align-items: flex-end;
@@ -86,6 +197,8 @@ nav ul li a:hover{
         background-color: #693aafcd;
         height: 0px;
         transition: all .4s ease;
+        z-index: 80;
+        overflow: hidden;
     }
     nav.active ul{
         height: 500px;
@@ -109,9 +222,39 @@ nav ul li a:hover{
 @media screen and (max-width:000px) {
     
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:770px) {
+    .courses-header{
+        padding: 0 2.5rem;
+    }
+    .courses-box {
+        width: 70%;
+        margin: 1.5rem 1.5rem;
+    }
+    nav ul{
+        width: 100%;
+        align-items: center;
+    }
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:590px) {
+    .courses-header h1 {
+        font-size: 4rem;
+    }
+    .courses-box {
+        width: 80%;
+    }
+}
+@media screen and (max-width:450px) {
+    .courses-box {
+        padding: 2rem;
+    }
+}
+ 
+@media screen and (max-width:000) {
+   
+}
+@media screen and (max-width:350px) {
+    .courses-box {
+        width: 90%;
+    }
+   
 }
