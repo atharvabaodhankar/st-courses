@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <title>Featured Courses</title>
+    <!-- https://website69822.nicepage.io/Page-2.html -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://ccapp.nicepage.com/4a4316528e67aca6aae425b10e9fc6dc1a8b13d2/images/default-logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/index.html">Courses</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero-yellow">
+
+        </div>
+        <div class="hero">
+            <div class="hero-desc">
+                <div class="hero-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <h1> EXPERIENCED</h1>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                </div>
+                <div class="hero-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <h1> RELIABLE</h1>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                </div>
+                <div class="hero-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <h1> CONVENIENT</h1>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                </div>
+                <div class="hero-box">
+                    <i class="fa-brands fa-facebook"></i>
+                    <h1> FLEXIBLE</h1>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/a2fa50d93a18539fac46835e/c54cc3e6-d746-77ff-742b-b19ab005e712.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script>
+        let navBar = document.querySelector("nav");
+        let hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener('click' , ()=>{
+            hamburger.classList.toggle('active');
+            navBar.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>
